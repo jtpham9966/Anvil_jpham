@@ -156,6 +156,13 @@ class FileInput extends React.Component {
     }
 
     const file = acceptedFile
+    // look through acceptedFiles and see if there is already another file with that same name
+    // iterate through and check if it does alter set name to altered file name
+    // edge cases, files that already iterations like kitten(2), set to kitten(2)(1)
+    // if it is different file type, then don't do the iteration if it does not exist
+    
+    
+    
     const value = {
       mimetype: file.type,
       name: file.name,
